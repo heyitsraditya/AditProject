@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adit Projects & Games</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #000;
+        color: #fff;
+        font-family: "Arial Black", "Arial Bold", Arial, sans-serif;
+        min-height: 100vh;
+      }
+
+      header {
+        text-align: center;
+        padding: 60px 20px 40px;
+      }
+
+      header h1 {
+        font-size: 2.8rem;
+        font-weight: 900;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+      }
+
+      header p {
+        font-size: 1.1rem;
+        font-weight: 400;
+        font-family: Arial, sans-serif;
+        color: #aaa;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin: 40px 0 30px;
+        letter-spacing: 1px;
+      }
+
+      .card-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 60px;
+      }
+
+      .card {
+        background-color: #1a1a1a;
+        border: 2px solid #333;
+        border-radius: 15px;
+        padding: 40px;
+        width: calc(20% - 16px);
+        min-width: 180px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .card:hover {
+        background-color: #2a2a2a;
+        border-color: #555;
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+      }
+
+      .card h3 {
+        font-size: 1.2rem;
+        font-weight: 900;
+        text-align: center;
+        letter-spacing: 0.5px;
+      }
+
+      @media (max-width: 1200px) {
+        .card {
+          width: calc(33.333% - 14px);
+        }
+      }
+
+      @media (max-width: 900px) {
+        .card {
+          width: calc(50% - 10px);
+        }
+      }
+
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2rem;
+        }
+
+        header p {
+          font-size: 1rem;
+        }
+
+        h2 {
+          font-size: 2rem;
+        }
+
+        .card {
+          width: 200px;
+          height: 120px;
+        }
+
+        .card h3 {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Web Projects & Games</h1>
+      <p>A collection of projects and games that I have made.</p>
+    </header>
+
+    <section class="container">
+      <h2>My Games</h2>
+      <div class="card-list">
+        <a
+          href="https://star-game-web.netlify.app/"
+          class="card"
+          target="_blank"
+        >
+          <h3>Collecting Stars</h3>
+        </a>
+
+        <a
+          href="https://corona-buster-games.netlify.app/"
+          class="card"
+          target="_blank"
+        >
+          <h3>Corona Busters</h3>
+        </a>
+
+        <a
+          href="https://math-fighter-games.netlify.app/"
+          class="card"
+          target="_blank"
+        >
+          <h3>Math Fighter</h3>
+        </a>
+
+        <a
+          href="https://buah-apel-game.netlify.app/"
+          class="card"
+          target="_blank"
+        >
+          <h3>Apple Falls Game</h3>
+        </a>
+
+        <a href="https://river-clean.netlify.app/" class="card" target="_blank">
+          <h3>River Cleanlines</h3>
+        </a>
+      </div>
+
+      <h2>Website Projects</h2>
+      <div class="card-list">
+        <a
+          href="https://scoots-vespa.netlify.app/"
+          class="card"
+          target="_blank"
+        >
+          <h3>Scoots</h3>
+        </a>
+      </div>
+    </section>
+  </body>
+</html>
